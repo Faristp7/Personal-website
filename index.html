@@ -244,12 +244,12 @@
     <form id="submit-form" action="" class="p-5"> 
         <div class="form-group"> 
           <label for="exampleInputEmail1">Email address</label> 
-          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> 
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required> 
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> 
         </div> 
         <div class="form-group"> 
           <label for="exampleInputName1">Name</label> 
-          <input type="text" name="text" class="form-control" id="exampleInputName1" placeholder="Name"> 
+          <input type="text" name="text" class="form-control" id="exampleInputName1" placeholder="Name" required> 
         </div>         
         <button type="submit" value="submit" class="btn btn-primary ">Submit</button> 
     </form> 
@@ -258,7 +258,7 @@
           $("#submit-form").submit((e)=>{ 
               e.preventDefault() 
               $.ajax({ 
-                  url:"https://script.google.com/macros/s/AKfycbxK5NZJSav8LIjqTwLZX_lNmTIOjrNOMyMzKrMHJBpGh97D6FvIMdu-SgosEWJktIzL/exec", 
+                  url:"https://script.google.com/macros/s/AKfycbxaH8n72ZziB92DuouO8_SnArbx4Y-Wr1Dgvjub8bwh9BZ23XzW-dF8az3-IBGCQ5de/exec", 
                   data:$("#submit-form").serialize(), 
                   method:"post", 
                   success:function (response){ 
